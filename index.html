@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas Domésticas do Solo Leveling</title>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gerenciador de Tarefas Domésticas</h1>
+    <div class="controls">
+      <input type="text" id="memberInput" placeholder="Nome do membro">
+      <input type="text" id="taskInput" placeholder="Título da tarefa">
+      <textarea id="descInput" placeholder="Descrição completa da tarefa..."></textarea>
+      <button id="addBtn" type="button">Adicionar Tarefa</button>
+    </div>
+    <div class="filter">
+      <label for="filterSelect">Filtrar por:</label>
+      <select id="filterSelect"><option value="">Todos</option></select>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <div class="modal" id="detailModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <h2>Responsável: <span id="modalMember"></span></h2>
+      <h3>Missão: <span id="modalTask"></span></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+</body>
+</html>
